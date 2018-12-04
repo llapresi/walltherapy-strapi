@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "mural",
+  "info": {
+    "name": "mural",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "year": {
+      "default": "",
+      "type": "integer"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "location": {
+      "default": "",
+      "type": "json"
+    },
+    "streetname": {
+      "default": "",
+      "type": "string"
+    },
+    "artists": {
+      "collection": "artist",
+      "via": "mural",
+      "dominant": true
+    },
+    "description": {
+      "default": "",
+      "type": "text"
+    }
+  }
+}

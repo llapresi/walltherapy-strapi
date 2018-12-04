@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "artist",
+  "info": {
+    "name": "artist",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "type": "text"
+    },
+    "mural": {
+      "collection": "mural",
+      "via": "artists"
+    }
+  }
+}

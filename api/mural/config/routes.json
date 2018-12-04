@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/murals",
+      "handler": "Mural.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/murals/count",
+      "handler": "Mural.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/murals/:_id",
+      "handler": "Mural.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/murals",
+      "handler": "Mural.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/murals/:_id",
+      "handler": "Mural.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/murals/:_id",
+      "handler": "Mural.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
