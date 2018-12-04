@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>skatespot.io</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="/assets/img/favicon.png"/>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css">
+  <link rel="manifest" href="/assets/manifest.json">
+  <meta name="theme-color" content="#263238">
+<link href="/app/main.752ba0f73a383ac7c3c4.css" rel="stylesheet"></head>
+<body class='mdc-typography'>
+  <section id="main" style="--mdc-theme-primary:#263238; --mdc-theme-secondary:#d50000;">
+    <noscript style="height: 100vh; display: block">
+      <header class="mdc-elevation--z4 mdc-top-app-bar mdc-top-app-bar--fixed">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-Start">
+            <div class="mdc-top-app-bar__title">
+              <span class="toolbar-logo"></span>
+              <span>skatespot.io</span>
+              </div>
+          </section>
+        </div>
+      </header>
+      <div style="position: relative; top: 50%; width: 100%; text-align: center; transform: translate3D(-50%);">JavaScript is required to use skatespot.io</div>
+    </noscript>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Roboto:400,500,700', 'Material Icons']
+      }
+    });
+  </script>
+  <script>if ('serviceWorker' in navigator) {
+  // Use the window load event to keep the page load performant
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/app/service-worker.js');
+  });
+}</script>    
+<script type="text/javascript" src="/app/bundle.e45d9d1f7c547f2e82d1.js"></script></body>
+</html>
