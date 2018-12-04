@@ -53,9 +53,13 @@ module.exports = {
       .map(ast => ast.alias)
       .join(' ');
 
+    console.log(populate);
     return Artist
       .findOne(_.pick(params, _.keys(Artist.schema.paths)))
-      .populate(populate);
+      .populate({
+        path: 'mural',
+        populate: { path: 'images' }
+      });
   },
 
   /**
