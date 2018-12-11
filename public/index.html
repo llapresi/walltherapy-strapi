@@ -142,22 +142,62 @@
   <body lang="en">
     <section>
       <div class="wrapper">
-        <h1>Welcome.</h1>
-        <p>You successfully created your Strapi application.</p>
-        <p>You are looking at: <code>./public/index.html</code>.</p>
-        <p>Your built-in admin panel is available at <a href="/admin" target="blank">/admin</a>.
-        <h2>Create your first API</h2>
-        <p>Easily generate a complete API with controllers, models and routes using:</p>
-        <pre><code class="lang-bash">$ strapi generate:api &lt;apiName&gt;</code></pre>
-        <h2>Resources</h2>
-        <p>You'll probably also want to learn how to customize your application, set up security and configure your data sources.</p>
-        <p>For more help getting started, check out:
-          <ul>
-            <li><a href="http://strapi.io/documentation/introduction" target="blank">Documentation</a></li>
-            <li><a href="https://github.com/strapi/strapi" target="blank">Repository on GitHub</a></li>
-            <li><a href="https://twitter.com/strapijs" target="blank">news on Twitter</a></li>
-            <li><a href="http://slack.strapi.io" target="blank">Real-time support on Slack</a></li>
-          </ul>
+        <h1>WALL/THERAPY REST API</h1>
+        <p>
+          This is the landing page the WALL/THERAPY REST API. You can query this API using the end
+          points <code>/murals</code> and <code>/artists</code> for information on WALL/THERAPY
+          murals and artists.
+        </p>
+        <p>
+          For an example of how this API can be used by an application, see the React based frontend
+          I developed for this final project at
+          <a href="https://walltherapy-frontend.netlify.com/">https://walltherapy-frontend.netlify.com/</a>
+        </p>
+        <h2>Example REST Query:</h2>
+        <h4>https://walltherapy-strapi.herokuapp.com/murals</h4>
+        <code>
+        <pre>
+[
+  {
+      "_id": "5c06447b83f9d20016dfeca3",
+      "name": "Untitled",
+      "year": 2017,
+      "location": {
+          "type": "Point",
+          "coordinates": [
+              -77.5715,
+              43.156639
+          ]
+      },
+      "streetname": "40 Greenleaf Steet, Rochester NY, 14610",
+      "artists": [
+          {
+              "_id": "5c062bede2eb500019f1bc81",
+              "name": "Ian Kuali’i",
+              "description": "Ian Kuali’i is a multi-disciplinary
+              artist born in Orange County California, 
+              raised in Maui, Hawaii ...",
+              "createdAt": "2018-12-04T07:25:33.140Z",
+              "updatedAt": "2018-12-04T07:25:33.147Z",
+              "__v": 0,
+              "id": "5c062bede2eb500019f1bc81"
+          }
+      ],
+......................
+        </pre>
+        </code>
+        <h2>Admin Panel:</h2>
+        <p>
+          The Strapi.io admin panel at
+          <a href="https://walltherapy-strapi.herokuapp.com/murals">https://walltherapy-strapi.herokuapp.com/admin</a>
+          allows admin users to add new Mural and Artists to the API's database
+          with a online editor.
+        </p>
+        <a>
+          Check out the <a href="https://strapi.io/documentation/3.x.x/">Strapi.io documentation</a> for more informaton
+          on using the framework and editor, but to start check out the 'Content Types' menu on the left side see how
+          the current databases items are created. Use the username <code>admin</code> and the password <code>adminpassword</code>
+          to login.
         </p>
       </div>
     </section>
